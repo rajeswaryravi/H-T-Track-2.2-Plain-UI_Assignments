@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Form for XYZ online pizza delivery service </h2>
+    <table style="width:100%">
+        <tr>
+            <th colspan="2">XYZ Online Delivery</th>
+        </tr>
+        <tr>
+            <th colspan="2">Personal Details</th>
+        </tr>
+        <tr>
+            <td>First Name <span class="required">*</span></td>
+            <td>
+                <input type="text" maxlength="20" size="20" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Phone Number <span class="required">*</span></td>
+            <td><input type="number" required></td>
+        </tr>
+        <tr>
+            <th colspan="2">Order Preferences</th>
+        </tr>
+        <tr>
+            <td>Size <span class="required">*</span></td>
+            <td>
+                <input type="radio" id="small" name="size" required>
+                <label for="small">Small</label>
+                <input type="radio" id="medium" name="size">
+                <label for="medium">Medium</label>
+                <input type="radio" id="large" name="size">
+                <label for="large">Large</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Base<span class="required">*</span></td>
+            <td>
+                <select name="base" id="base">
+                    <option value="chickenstuffedcrust">Chicken Stuffed Crust</option>
+                    <option value="panpizza">Pan Pizza</option>
+                    <option value="cheesecrust">Cheese Crust</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Toppings</td>
+            <td>
+                <input type="checkbox" id="cheese" name="topping1" value="Cheese">
+                <label for="cheese">Cheese</label>
+                <input type="checkbox" id="olive" name="topping2" value="Olives">
+                <label for="olive">Olives</label>
+                <input type="checkbox" id="tomato" name="topping3" value="Tomatoes">
+                <label for="tomato">Tomatoes</label>
+                <input type="checkbox" id="capsicum" name="topping4" value="Capsicum">
+                <label for="capsicum">Capsicum</label>
+                <input type="checkbox" id="jalapenos" name="topping5" value="Jalapenos">
+                <label for="jalapenos">Jalapenos</label>
+                <input type="checkbox" id="mashrooms" name="topping6" value="Mashrooms">
+                <label for="mashrooms">Mashrooms</label>
+                <input type="checkbox" id="pepperoni" name="topping7" value="Pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="onion" name="topping8" value="Onion">
+                <label for="onion">Onion</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Additional Details</td>
+            <td>
+                <textarea rows="2" cols="30"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Cofirm details and proceed to pay?
+                <input type="radio" id="yes" name="proceed">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="proceed">
+                <label for="no">No</label><br>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2"><input type=button value="Submit"></th>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<link href='https://css.gg/mail.css' rel='stylesheet'>
+
+<head>
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #03a9f4;
+            color: #fff;
+        }
+
+        header p {
+            margin-left: 10px;
+        }
+
+        header ul li {
+            padding: 0px 25px;
+            list-style-type: none;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            border-right: 1px solid #fff;
+            position: relative;
+        }
+
+        header ul li:last-child {
+            border-right: none;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 554px;
+            height: 445px;
+            margin: 30px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .right {
+            width: 570px;
+        }
+
+        button {
+            color: #fff;
+            background-color: #0c78cd;
+            padding: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        footer p {
+            text-align: center;
+            color: #fff;
+            background-color: #03a9f4;
+            padding: 15px;
+            font-size: 12px;
+            ;
+        }
+
+        .mail_icon {
+            height: 12px;
+            width: 18px;
+            position: absolute;
+            left: 166px;
+            top: 2px;
+        }
+
+        span {
+            margin-left: 2px;
+        }
+    </style>
+    <script>
+        function explore_click() {
+            location.assign("services.html");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>AutoMob-Mechanic</p>
+        </div>
+        <div>
+            <ul class="nav">
+                <li>
+                    Home
+                </li>
+                <li>
+                    Login
+                </li>
+                <li>
+                    Contact@automob.co.in<i class="gg-mail mail_icon"></i>
+                </li>
+                <li>
+                    999-999-9999<span>&#9742;</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content">
+        <section class="left">
+            <img src="./images/automobile.jpg" alt="automob">
+        </section>
+        <section class="right">
+            <h4>About Us</h4>
+            <p>"One step solution to get your car repairs and serviced"</p>
+            <p>
+                The modern automobile is a complex technical system employing subsystems with specific design functions.
+                Some of these consist of thousands of component parts that have evolved from breakthroughs in existing
+                technology.
+            </p>
+            <h4>How it Works!</h4>
+            <h5>Choose the service</h5>
+            <p>Choose the perfect service for your car.</p>
+            <h5>Book an Appoinment</h5>
+            <p>Book an appoinment with us on your convenient date</p>
+            <h5>Get your Car Fixed</h5>
+            <p>No need to wait, our representative will take care of everything on thier own</p>
+            <button type="button" onclick="explore_click()"> Explore More </button>
+
+        </section>
+    </div>
+    </div>
+    <footer>
+        <p>Copyright @ 2020 AutoMob-Mechanicx. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

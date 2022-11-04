@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<link href='https://css.gg/mail.css' rel='stylesheet'>
+
+<head>
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #03a9f4;
+            color: #fff;
+        }
+
+        header p {
+            margin-left: 10px;
+        }
+
+        header ul li {
+            padding: 0px 25px;
+            list-style-type: none;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            border-right: 1px solid #fff;
+            position: relative;
+        }
+
+        header ul li:last-child {
+            border-right: none;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 280px;
+            height: 100px;
+            margin: 30px;
+        }
+
+        button {
+            color: #fff;
+            background-color: #0c78cd;
+            padding: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        footer p {
+            text-align: center;
+            color: #fff;
+            background-color: #03a9f4;
+            padding: 15px;
+            font-size: 12px;
+            ;
+        }
+
+        .mail_icon {
+            height: 12px;
+            width: 18px;
+            position: absolute;
+            left: 166px;
+            top: 2px;
+        }
+
+        span {
+            margin-left: 2px;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .item1,
+        .item2,
+        .item3 {
+            border: 1.5px solid #999;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .offer p {
+            color: #ff0000;
+        }
+    </style>
+    <script>
+        var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var minutes = Math.floor((distance % (500 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("counter").innerHTML = minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("counter").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+        function moredetail_click() {
+            location.assign("report.html");
+        }
+        function backhome_click() {
+            location.assign("home.html");
+        }
+        function report_click() {
+            location.assign("report.html");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>AutoMob-Mechanic</p>
+        </div>
+        <div>
+            <ul class="nav">
+                <li>
+                    Hi Johnson
+                </li>
+                <li onclick="backhome_click()">
+                    Home
+                </li>
+                <li>
+                    Services
+                </li>
+                <li onclick="report_click()">
+                    Reports
+                </li>
+                <li>
+                    Booking
+                </li>
+                <li>
+                    Logout
+                </li>
+                <li>
+                    Contact@automob.co.in<i class="gg-mail mail_icon"></i>
+                </li>
+                <li>
+                    999-999-9999<span>&#9742;</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <section class="">
+            <h2>Car Repair and Service</h2>
+            <p>Our representatives professionaly trained and skilled latest and futuristic techniques to provide a best
+                quality service</p>
+            <p>At AutoMob-Mechanic, we provide a high class service to the customers for thier happy and memorable
+                driving experience</p>
+        </section>
+        <section class="services">
+            <div class="item1">
+                <h5>Preventive Maintenence Service</h5>
+                <img src="./images/item1.jfif" alt="PreventiveMaintenenceService">
+                <p>Periodically check and keep your car runnign</p>
+                <p><i>Offer:20%</i></p>
+                <button type="button" onclick="moredetail_click()">More Details</button>
+            </div>
+            <div class="item1">
+                <h5>Body Repair Service</h5>
+                <img src="./images/item2.png" alt="PreventiveMaintenenceService">
+                <p>Full chasis body repair provided by the experts</p>
+                <p><i>Offer:10%</i></p>
+                <button type="button" onclick="moredetail_click()">More Details</button>
+            </div>
+            <div class="item1">
+                <h5>Car Care Service</h5>
+                <img src="./images/item3.jfif" alt="PreventiveMaintenenceService">
+                <p>Get your car sparking clean in just minutes</p>
+                <p><i>Offer:15%</i></p>
+                <button type="button" onclick="moredetail_click()">More Details</button>
+            </div>
+        </section>
+    </div>
+    </div>
+    <div class="offer">
+        <p>**Offer ends in:<span id="counter"></span></p>
+    </div>
+    <footer>
+        <p>Copyright @ 2020 AutoMob-Mechanicx. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

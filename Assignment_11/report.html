@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<link href='https://css.gg/mail.css' rel='stylesheet'>
+
+<head>
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #03a9f4;
+            color: #fff;
+        }
+
+        header p {
+            margin-left: 10px;
+        }
+
+        header ul li {
+            padding: 0px 25px;
+            list-style-type: none;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            border-right: 1px solid #fff;
+            position: relative;
+        }
+
+        header ul li:last-child {
+            border-right: none;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+
+        footer p {
+            text-align: center;
+            color: #fff;
+            background-color: #03a9f4;
+            padding: 15px;
+            font-size: 12px;
+            ;
+        }
+
+        .mail_icon {
+            height: 12px;
+            width: 18px;
+            position: absolute;
+            left: 166px;
+            top: 2px;
+        }
+
+        span {
+            margin-left: 2px;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .offer p {
+            color: #ff0000;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 91%;
+            margin: 30px 30px 30px 50px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #bad9f1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>AutoMob-Mechanic</p>
+        </div>
+        <div>
+            <ul class="nav">
+                <li>
+                    Hi Admin
+                </li>
+                <li onclick="backhome_click()">
+                    Home
+                </li>
+                <li onclick="service_click()">
+                    Services
+                </li>
+                <li>
+                    Reports
+                </li>
+                <li>
+                    Logout
+                </li>
+                <li>
+                    Contact@automob.co.in<i class="gg-mail mail_icon"></i>
+                </li>
+                <li>
+                    999-999-9999<span>&#9742;</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+
+        <table id="table">
+            <tr>
+                <th>C.Id</th>
+                <th>Customer Name</th>
+                <th>Service Name</th>
+                <th>Service Date</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+
+
+    </div>
+
+
+    <footer>
+        <p>Copyright @ 2020 AutoMob-Mechanicx. All Rights Reserved</p>
+    </footer>
+
+    <script>
+        var array = [
+            ["C1001", "Maria Anders", "Car Care service", "22-Jan-202", "4500"],
+            ["C1001", "Maria Anders", "Car Care service", "22-Jan-202", "4500"],
+            ["C1002", "Christina Berglund", "Car Care service", "23-Jan-2020", "4500"],
+            ["C1003", "Albert Harry", "Preventive Manintence Services", "23-Jan-2020", "5000"],
+            ["C1004", "David James", "Preventive Manintence Services", "23-Jan-2020", "5000"],
+            ["C1005", "Cathy Davis", "Body Repair Services", "24-Jan-2020", "7000"],
+            ["C1006", "John David", "Preventive Manintence Services", "24-Jan-2020", "5000"],
+            ["C1007", "Melvin Jacob", "Body Repair Services", "25-Jan-2020", "7000"],
+            ["C1008", "Clara Stalin", "Preventive Manintence Services", "25-Jan-2020", "5000"],
+            ["C1009", "Arav Stya", "Car Care service", "25-Jan-2020", "5000"],
+            ["C1010", "Mark John", "Preventive Manintence Services", "26-Jan-2020", "4500"],
+            ["C1011", "James Jacob", "Car Care service", "26-Jan-2020", "4500"],
+            ["C1012", "Samual Thomas", "Body Repair Services", "26-Jan-2020", "7000"],
+        ]
+        table = document.getElementById("table");
+        for (var i = 1; i < table.rows.length; i++) {
+            for (var j = 0; j < table.rows[i].cells.length; j++) {
+                table.rows[i].cells[j].innerHTML = array[i - 0][j];
+            }
+        }
+        function backhome_click() {
+            location.assign("home.html");
+        }
+        function service_click() {
+            location.assign("services.html");
+        }
+    </script>
+</body>
+
+</html>
